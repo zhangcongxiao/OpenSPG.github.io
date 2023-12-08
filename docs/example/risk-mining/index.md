@@ -71,7 +71,7 @@ knext reasoner query --dsl "${ql}"
 
 电话号码：标准属性 vs 文本属性。
 
-编辑dsl_task.txt，输入如下内容：
+编辑dsl_task.dsl，输入如下内容：
 
 ```
 MATCH
@@ -168,7 +168,7 @@ Define (s:Person)-[p:belongTo]->(o:`TaxOfRiskApp`/`赌博App老板`) {
 
 **获取所有的赌博应用**
 
-编辑dsl_task1.txt，输入如下内容：
+编辑dsl_task1.dsl，输入如下内容：
 
 ```
 MATCH (s:`RiskMining.TaxOfRiskApp`/`赌博应用`) RETURN s.id
@@ -182,7 +182,7 @@ knext reasoner query --file ./reasoner/dsl_task1.dsl
 
 **获取赌博APP背后的开发者和老板**
 
-编辑dsl_task2.txt，输入如下内容：
+编辑dsl_task2.dsl，输入如下内容：
 
 ```
 MATCH
